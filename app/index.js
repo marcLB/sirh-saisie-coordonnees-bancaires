@@ -3,7 +3,7 @@ import RouteModule from 'angular-route'
 import 'bootstrap/dist/css/bootstrap.css'
 
 import { BurgerService } from './service/burger.service'
-import { ToppingService } from './service/topping.service'
+import { ClientsService } from './service/clients.service'
 
 import { SgpComponent } from './sgp/sgp.component'
 import { ClientsComponent } from './clients/clients.component'
@@ -24,5 +24,5 @@ angular.module('app', [
 .component('sgpFiltre', FiltreComponent)
 
 .service('BurgerService', BurgerService)
-.service('ToppingService', ToppingService)
+.service('ClientsService', ClientsService)
 .config(routes)
