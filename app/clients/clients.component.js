@@ -4,22 +4,14 @@ import template from './clients.component.html'
 class controller {
 
     $onInit () {
-        this.toppings = angular.copy(this.toppings)
+        this.clients = angular.copy(this.clients)
     }
-
-    select (topping) {
-        this.onSelect({
-            $event: topping
-        })
-    }
-
 }
 
 export let ClientsComponent = {
     template,
     controller,
     bindings: {
-        toppings: '<',
-        onSelect: '&'
+        clients: '<',
     }
 }

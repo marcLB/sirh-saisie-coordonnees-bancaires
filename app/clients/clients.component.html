@@ -6,10 +6,10 @@
             <th>Nom</th>
             <th>Prénom</th>
         </tr>
-        <tr ng-repeat="topping in $ctrl.toppings track by $index">
-            <td> {{ topping.matricule }}</td>
-            <td> {{ topping.nom }}</td>
-            <td> {{ topping.prenom }}</td>
+        <tr ng-repeat="client in $ctrl.clients track by $index">
+            <td> {{ client.matricule }}</td>
+            <td> {{ client.nom }}</td>
+            <td> {{ client.prenom }}</td>
         </tr>
     </table>
 
